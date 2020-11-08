@@ -39,7 +39,7 @@ def subscribe_to_stream(stream_id):
     }
 
     payload = {
-        'hub.callback': f'{os.environ['TL_HACKS_IP']}/stream_subscription?stream_id={stream_id}',
+        'hub.callback': f"{os.environ['TL_HACKS_IP']}/stream_subscription?stream_id={stream_id}",
         'hub.mode': 'subscribe',
         'hub.topic': f'https://api.twitch.tv/helix/streams?user_id={stream_id}',
         'hub.lease_seconds': 864000,

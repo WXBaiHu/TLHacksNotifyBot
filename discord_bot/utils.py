@@ -1,6 +1,6 @@
 import requests
 
-subscribe_new_user_url = f'{os.environ['TL_HACKS_IP']}/subscribe_new_user'
+subscribe_new_user_url = f"{os.environ['TL_HACKS_IP']}/subscribe_new_user"
 
 
 def convert_champion_name_to_champion_id(champion_name):
